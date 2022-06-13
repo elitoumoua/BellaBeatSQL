@@ -152,10 +152,8 @@ FROM
 	sleepDay_merged sleep
 	JOIN dailyActivity_merged act
 	ON sleep.Id = act.Id
-WHERE
-	Calories > 100 AND
-	TotalSteps > 100
-GROUP BY act.Id;
+GROUP BY 
+	act.Id;
 
 /*
 Creating two temporary tables to see the average amount users sleep and were active on different weekdays, starting with the activity table.
