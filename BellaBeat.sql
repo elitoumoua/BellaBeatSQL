@@ -25,6 +25,22 @@ WHERE
 	TotalSleepRecords IS NULL OR
 	TotalMinutesAsleep IS NULL OR
 	TotalTimeInBed IS NULL;
+	
+SELECT
+	* 
+FROM 
+	weightLogInfo_merged
+WHERE
+	Id IS NULL OR
+	WHERE
+	Id IS NULL OR
+	Date IS NULL OR
+	WeightKg IS NULL OR
+	WeightPounds IS NULL OR
+	Fat IS NULL OR
+	BMI IS NULL OR
+	IsManualReport IS NULL OR
+	LogId IS NULL;
 
 /*
 This is to see how many users are participating. There are 33 users within the daily activity table.
